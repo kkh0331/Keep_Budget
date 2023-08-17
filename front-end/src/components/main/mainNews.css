@@ -1,0 +1,13 @@
+.h2_title{
+    text-align: center;
+    color: #333;
+    margin-top: 40px;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.div_news_element{
+    margin: 10px;
+    /* overflow: auto; */
+    height: 400px;
+}

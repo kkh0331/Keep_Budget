@@ -1,0 +1,70 @@
+.app-container {
+  display: flex;
+  height: 100vh;
+  padding: 10px;
+}
+
+.left-section {
+  flex: 3; 
+  background-color: white;
+  border: 1px solid #8d8075;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.right-section {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-right-section {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #8d8075;
+  font-size: 20px;
+}
+
+.middle-right-section{
+  flex: 0.5;
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #8d8075;
+  font-size: 20px;
+}
+
+.bottom-right-section {
+  flex: 13;
+  background-color: white;
+  border: 1px solid #8d8075;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnType02 {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fece0d;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btnType02:hover {
+  background-color: #fdbb0a; /* 조금 더 어둡게 */
+}
+
+.btnType02:active {
+  background-color: #fcad0e; /* 눌렀을 때 더 어둡게 */
+}
