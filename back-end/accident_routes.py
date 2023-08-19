@@ -24,7 +24,7 @@ def accident_routes_news():
             cursor = db.cursor()
             sql = f"SELECT DISTINCT * FROM accident_news WHERE {region} > 0 ORDER BY date DESC"
             cursor.execute(sql)
-            results = cursor.fetchall()
+            results = cursor.fetchmany(10)
             cursor.close()
             db.close()
             news_list = []

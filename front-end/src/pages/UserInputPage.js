@@ -21,6 +21,7 @@ const UserInputPage = () => {
     const [moveHouse, setMoveHouse] = useState("");
     const [moveHouseType, setMoveHouseType] = useState("");
     const [moveSize, setMoveSize] = useState(0);
+    const [movePrice, setMovePrice] = useState(0);
 
     const navigate = useNavigate();
 
@@ -97,6 +98,10 @@ const UserInputPage = () => {
         setMoveSize(e.target.value);
     }
 
+    const handleMovePriceChange = (e) => {
+        setMovePrice(e.target.value);
+    }
+
     const cautionTextAsHouseType = () => {
         if(currentHouseType === ""){
             return "집의 형태를 먼저 선택해주세요";
@@ -129,7 +134,8 @@ const UserInputPage = () => {
             moveRegion : moveRegion,
             moveHouse : moveHouse,
             moveHouseType : moveHouseType,
-            moveSize : moveSize
+            moveSize : moveSize,
+            movePrice : movePrice
         };
         navigate('/result',{
             state:data
@@ -138,7 +144,7 @@ const UserInputPage = () => {
 
     return (
         <div>
-            <AppHeader title={"KB-House User Information Input Page"}></AppHeader>
+            <AppHeader title={"Keep Budget User Information Input Page"}></AppHeader>
             <div id='user_input_background'>
                 <h1 className='h1_title'>개인 정보 입력</h1>
                 <table className='tType01'>
@@ -251,6 +257,13 @@ const UserInputPage = () => {
                                         <option value="purchaseSale">매매</option>
                                     </select>
                                 </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope='row'>이사 희망 가격</th>
+                            <td>
+                                <input className='input' type='number' onChange={handleMovePriceChange}></input>
+                                <span className='caution'>단위 : 만원</span>
                             </td>
                         </tr>
                         <tr>

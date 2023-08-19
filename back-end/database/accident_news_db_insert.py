@@ -32,12 +32,3 @@ def accident_news_crawling_to_db_insert(startMonth, startDay, endMonth, endDay, 
             continue
     # 접속 종료
     db.close()
-
-if __name__ == '__main__':
-    current_date = datetime.now()
-    one_day_ago = current_date - timedelta(days=1)
-    previous_month = one_day_ago.month
-    previous_day = one_day_ago.day
-    print(f'{previous_month}월 {previous_day}일의 뉴스 db 저장 시작')
-    accident_news_crawling_to_db_insert(previous_month, previous_day, previous_month, previous_day, 102, 249)
-    print(f'{previous_month}월 {previous_day}일의 뉴스 db 저장 완료')

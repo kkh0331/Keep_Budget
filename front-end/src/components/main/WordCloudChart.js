@@ -7,7 +7,7 @@ const WordCloudChart = ({wordCloudData}) => {
         <div style={{textAlign:"center", margin:"auto", width:"350px", height:"350px"}}>
             <WordCloud 
                 data={wordCloudData}
-                fontSize={(word) => Math.log2(word.value) * 30}
+                fontSize={(word) => Math.log2(word.value) * 20}
                 font="Times"
             />
         </div>

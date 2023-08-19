@@ -15,15 +15,15 @@ const RightTop = (props) => {
 
   return (
     <div>
-        <span style={{fontSize:"25px", color:"#ffb437", fontWeight:"bold"}}>{props.userInfo.userName}</span>님, {userInfo.moveDate}개월 후 {moveRegion} {moveHouse} {moveHouseType} {userInfo.moveSize}평으로 이사 희망
-        {/* <div style={{marginTop:"10px"}}>
+        <span style={{fontSize:"25px", color:"#ffb437", fontWeight:"bold"}}>{props.userInfo.userName}</span>님,
+        <div style={{marginTop:"10px"}}>
             <span style={{fontWeight:"bold"}}>현재 상황 : </span>
             (연봉){userInfo.annualIncome}만원 (순자산){userInfo.totalAmount}만원 보유
         </div>
         <div style={{marginTop:"10px"}}>
             <span style={{fontWeight:"bold"}}>희망 사항 : </span>
             {userInfo.moveDate}개월 후, {moveRegion} {moveHouse} {moveHouseType} {userInfo.moveSize}평으로 이사
-        </div> */}
+        </div>
     </div>
   );
 };

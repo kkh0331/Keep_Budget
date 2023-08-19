@@ -6,6 +6,7 @@ import RightTop from '../components/main/RightTop';
 import MainLeftPage from './MainLeftPage';
 import MainMiddlePage from './MainMiddlePage';
 import SearchMove from '../components/main/SearchMove';
+import MainRightBottomPage from './MainRightBottomPage';
 
 const MainPage = () => {
 
@@ -15,7 +16,7 @@ const MainPage = () => {
 
     return (
         <div>
-            <AppHeader title={"KB-House Main Page"}></AppHeader>
+            <AppHeader title={"Keep Budget Main Page"}></AppHeader>
             <div className='app-container'>
                 <div className='left-section'>
                     <MainLeftPage wantMoveRegion={wantMoveRegion}></MainLeftPage>
@@ -31,7 +32,7 @@ const MainPage = () => {
                         <SearchMove setWantMoveRegion={setWantMoveRegion}></SearchMove>
                     </div>
                     <div className='bottom-right-section'>
-                        chatgpt
+                        <MainRightBottomPage userInfo = {userInfo} wantMoveRegion = {wantMoveRegion}></MainRightBottomPage>
                     </div>
                 </div>
             </div>
