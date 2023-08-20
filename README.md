@@ -10,7 +10,7 @@
 # Functions
 - Flask scheduler을 활용하여 매일 오전 2시마다 BeatifulSoup 모듈을 활용해서 자동으로 네이버 뉴스에서 크롤링 진행(단!! 서버가 켜져있다는 가정하에)
   - 부동산 뉴스 : 뉴스 기사에서 지역을 추출하고 감정분석(Bert 이용)을 진행하여 DB에 저장 > Donut-Chart을 활용해서 시각화 진행
-  - 사건사고 뉴스 : 뉴스 기사에서 지역을 추출하고 형태소 분석(Konlpy-Twitter 이용)을 진행하여 DB에 저장 > Wort Cloud을 활용해서 시각화 진행
+  - 사건사고 뉴스 : 뉴스 기사에서 지역을 추출하고 형태소 분석(Konlpy-Twitter 이용)을 진행하여 DB에 저장 > Word Cloud을 활용해서 시각화 진행
 - 사용자가 입력한 정보를 바탕으로 추천 시스템 구현(코사인 유사도 이용)
 
 # 프로젝트 Architecture
