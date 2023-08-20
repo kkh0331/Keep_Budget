@@ -1,7 +1,7 @@
 # Keep Budget
 - 제 5회 KB ai Challenge 공모전 대회 참여를 목적으로 제작되었습니다.
 
-# 프로젝트명 : 내 집 마련을 위한 로드맵, Keep Budget이 도와드립니다
+# 내 집 마련을 위한 로드맵, Keep Budget이 도와드립니다
 - Main Page Capture Image<br>
 <img width="480" alt="KakaoTalk_Image_2023-08-19-21-19-07" src="https://github.com/kkh0331/KB-ai/assets/99806443/5e0fa8fa-6123-4d76-b2d1-1e0f923e83bd"><br>
 [시연영상을 보실려면 여기를 클릭해주세요](https://youtu.be/DEJtR_HfwHc)
